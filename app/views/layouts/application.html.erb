@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+</head>
+<body>
+<div class="one-container">
+  <div class="img">
+    <%= image_tag('frontpage.jpeg') %>
+  </div>
+  <div class="title-border">
+    <div class="title-bar">
+        <div class="small-4 columns">
+          <ul class="title-name">
+            <li class="title" style="opacity: none;">Number</li>
+             <li class="title" style="opacity: none;"><span> 1 </span></li>
+              <li class="title" style="opacity: none;">Taste</li>
+            <li class="name" style="opacity: none;"><%= link_to "chinese food", ones_path %></li>
+          </ul>
+        </div>
+
+        <div class="small-8 columns">
+          <ul class="navi">
+            <li style="opacity: none;"><%= link_to "Menu", menus_path %></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+  <%- flash.each do |key, value| -%>
+    <div class="flash flash-<%= key %>">
+      <%= value %>
+    </div>
+  <%- end -%>
+
+  <%= yield %>
+
+  <%= javascript_include_tag 'application' %>
+  <%= yield :extra_footer %>
+</body>
+</html>

@@ -1,0 +1,17 @@
+html, #map-canvas {
+  background-color: #B23070;
+}
+
+#map-canvas {
+  height: 450px;
+  border: solid 5px;
+  border-color: #fff;
+  margin-bottom: 1em;
+  display: inline-table;
+}
+
+#start, input {
+height: 2em;
+font-size: 20px;
+}
+

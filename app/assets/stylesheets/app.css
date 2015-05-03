@@ -1,0 +1,148 @@
+.title-border {
+  position: fixed;
+  z-index: 99;
+
+}
+.title-bar {
+  background-color: #fff;
+  width: 1500px;
+  height: 2.5em;
+}
+
+.title-name li {
+  display: inline-block;
+}
+
+.title span {
+  color: #035900;
+  font-size: 46px;
+}
+.title {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 36px;
+  list-style: none;
+  color: #FF071B;
+}
+.name {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+  list-style: none;
+  color: #035900;
+  margin-left: .2em;
+  text-decoration: underline;
+}
+
+.navi li {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 1.5em;
+  list-style: none;
+  color: #FF071B;
+  text-decoration: underline;
+}
+
+.title-bar,
+.img img {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.two-container,
+.img img {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+.img img {
+  z-index: 0;
+}
+
+.one-container {
+  position: relative;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.two-container {
+  position: relative;
+  height: auto;
+  background-color: #fff;
+}
+
+.three-container {
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  height: 150px;
+  background-color: #B23070;
+}
+
+.info-container {
+  position: relative;
+  height: 425px;
+  background-color: #B23070;
+}
+.direction-container {
+  position: relative;
+  height: auto;
+  background-color: #B23070;
+}
+
+.info-1 {
+  width: 10em;
+  font-size: 20px;
+  display: inline-table;
+  background-color: #FF071B;
+  color: #fff;
+  border: solid 5px;
+  font-family: 'Kaushan Script', cursive;
+  margin-bottom: -.6em;
+  margin-top: -.6em;
+}
+
+.info-2 {
+  width: 12em;
+  font-size: 16px;
+  display: inline-table;
+  background-color: #FF071B;
+  color: #fff;
+  border: solid 5px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.info-3 {
+  width: 18em;
+  height: 19em;
+  font-size: 22px;
+  display: inline-table;
+  color: #fff;
+  border: solid 5px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.info-3 li {
+ list-style: none;
+}
+
+.info-4 {
+  display: inline-table;
+  font-size: 20px;
+  width: 800px;
+  color: #fff;
+  border: solid 5px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.one-footer {
+  background-color: #FF071B;
+  height: 3em;
+}
+
+.one-footer p {
+  color: #fff;
+  padding-top: 2em;
+}
+
