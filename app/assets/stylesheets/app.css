@@ -1,33 +1,34 @@
-.title-border {
+.title-bar {
   position: fixed;
   z-index: 99;
-
-}
-.title-bar {
   background-color: #fff;
   width: 1500px;
-  height: 2.5em;
+  height: 5em;
+  border-bottom: solid 5px;
+  border-color: #B23070;
 }
 
 .title-name li {
+  margin-top: .1em;
   display: inline-block;
+  width: auto;
 }
 
 .title span {
-  color: #035900;
+  color: #00B23E;
   font-size: 46px;
 }
 .title {
   font-family: 'Kaushan Script', cursive;
   font-size: 36px;
   list-style: none;
-  color: #FF071B;
+  color: #B20600;
 }
 .name {
   font-family: 'Kaushan Script', cursive;
   font-size: 20px;
   list-style: none;
-  color: #035900;
+  color: #FF1912;
   margin-left: .2em;
   text-decoration: underline;
 }
@@ -36,15 +37,16 @@
   font-family: 'Kaushan Script', cursive;
   font-size: 20px;
   display: inline-block;
-  margin-top: 1.5em;
+  margin-top: 1.7em;
   list-style: none;
-  color: #FF071B;
+  color: #FF1912;
   text-decoration: underline;
 }
 
 .title-bar,
 .img img {
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
 }
@@ -60,7 +62,7 @@
   z-index: 0;
 }
 
-.one-container {
+.one-img-container {
   position: relative;
   height: 75vh;
   overflow: hidden;
@@ -97,10 +99,16 @@
   display: inline-table;
   background-color: #FF071B;
   color: #fff;
-  border: solid 5px;
+  border: solid 1px;
   font-family: 'Kaushan Script', cursive;
   margin-bottom: -.6em;
   margin-top: -.6em;
+}
+
+.panel {
+  color: #fff;
+  border: solid 1px;
+  font-family: 'Kaushan Script', cursive;
 }
 
 .info-2 {
@@ -109,18 +117,35 @@
   display: inline-table;
   background-color: #FF071B;
   color: #fff;
-  border: solid 5px;
+  border: solid 1px;
   font-family: 'Kaushan Script', cursive;
 }
 
 .info-3 {
+  vertical-align: center;
+  background-color: #999999;
   width: 18em;
   height: 19em;
   font-size: 22px;
   display: inline-table;
   color: #fff;
-  border: solid 5px;
+  border: solid 1px;
   font-family: 'Kaushan Script', cursive;
+}
+
+.info-img {
+  position: relative;
+  width: 18em;
+  height: 19em;
+  display: inline-block;
+  color: #fff;
+  border: solid 1px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.info-img img{
+  width: 18em;
+  height: 19em;
 }
 
 .info-3 li {
@@ -128,21 +153,126 @@
 }
 
 .info-4 {
+  background-color: #999999;
   display: inline-table;
   font-size: 20px;
   width: 800px;
   color: #fff;
-  border: solid 5px;
+  border: solid 1px;
   font-family: 'Kaushan Script', cursive;
 }
 
 .one-footer {
   background-color: #FF071B;
-  height: 3em;
+  height: 4em;
 }
 
-.one-footer p {
+.one-footer > p {
   color: #fff;
   padding-top: 2em;
+  text-align: center;
 }
+
+.right-footer > li {
+  margin-top: 3em;
+  list-style: none;
+}
+
+.right-footer > li > a {
+  margin-top: 2em;
+  color: #fff;
+}
+
+.menu-one-container {
+  height: auto;
+  background-color: #B23070;
+  position: relative;
+  margin-bottom: 1em;
+}
+strong > a {
+  color: #228B22;
+}
+
+strong > a:hover {
+  color: #FF071B;
+}
+
+.menu-two-container {
+
+  position: relative;
+}
+
+.menu-one-container h3 {
+ color: #FF071B;
+}
+
+.menu-three-container {
+  height: 650px;
+  position: relative;
+  z-index: -1;
+}
+
+.item li{
+  display: inline-table;
+  margin-left: 2em;
+  color: #333333;
+}
+.menu-bar {
+ text-align: center;
+ height: 4em;
+ border-top: solid 1px;
+ border-bottom: solid 1px;
+}
+.menu-bar a {
+  list-style: none;
+  display: inline-block;
+  margin: 1.2em;
+  color: #000;
+}
+
+.menu-bar a:hover {
+  font-size: 16px;
+  color: #fff;
+}
+
+.appetizer-container {
+  display: none;
+}
+
+.rice-container {
+  display: none;
+}
+
+.lo-mein-container {
+  display: none;
+}
+
+.soups-container {
+  display: none;
+}
+
+.dumplings-container {
+  display: none;
+}
+
+.chicken-container {
+  display: none;
+}
+
+.beef-container {
+  display: none;
+}
+
+.pork-container {
+  display: none;
+}
+
+.seafood-container {
+  display: none;
+}
+
+.drinks-container {
+  display: none;
+}
+
 

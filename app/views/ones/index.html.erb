@@ -1,3 +1,9 @@
+<div class="one-img-container">
+  <div class="img">
+    <%= image_tag('frontpage.JPG') %>
+  </div>
+</div>
+
   <div class="two-container">
     <div class="panel info-1">Master Chefs</div>
       <div class="panel info-1">Fresh Ingredients</div>
@@ -41,17 +47,25 @@
 
 <div class="direction-container">
   <div class="panel map-input info-4 ">
-    <b style="color: #000;">I can get you directions. Where are you coming from? </b>
+    <b style="color: #333333; margin-right: 20em;">I can get you directions!</b>
     <br>
-    <form>
     <br>
-    <input id="start" class="small-12 columns" onchange="calcRoute();"></input>
+    <input id="start" class="small-10 columns">
+    <button class="button small" onclick="calcRoute();">directions</button>
+    </input>
+
     <br>
-    </form>
   </div>
 
-        <div id="map-canvas" style="hieght: 500px; width: 800px;"></div>
+        <div id="map-canvas"></div>
   <div class="one-footer">
     <p> Number 1 Taste chinese takout. Location: 382 Trapelo Road, Belmont Masschussetts 02478 Phone: 617.489.9577 </p>
+     <ul class="right-footer">
+       <% if current_user %>
+          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+       <% else %>
+          <li><%= link_to 'Sign In', new_user_session_path %></li>
+       <% end %>
+      </ul>
 
   </div>

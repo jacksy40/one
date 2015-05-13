@@ -3,15 +3,20 @@ html, #map-canvas {
 }
 
 #map-canvas {
-  height: 450px;
-  border: solid 5px;
+  height: 500px;
+  width: 800px;
+  border: solid 1px;
   border-color: #fff;
   margin-bottom: 1em;
   display: inline-table;
 }
 
 #start, input {
-height: 2em;
+height: 2.1em;
 font-size: 20px;
 }
+
+
+
+
 

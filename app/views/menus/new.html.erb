@@ -1,0 +1,38 @@
+<h1> Admin function </h1>
+<h2> Update Menu </h2>
+
+<div class="small-10 small-centered columns ">
+  <%= form_for @menu, method: :post do |h| %>
+    <fieldset>
+      <legend>Menu</legend>
+        <div class="small-11 columns menu-input">
+          <ul><%= h.label :section_name %>
+            <%= h.select :section_name,
+              options_for_select(@sections.map{|s| s.section_name }) %></ul>
+          <ul><%= h.label :name %>
+            <%= h.text_field :name %></ul>
+          <ul><%= h.label :description %>
+            <%= h.text_field :description %></ul>
+          <ul><%= h.label :picture %>
+            <%= h.file_field :picture %></ul>
+          <ul><%= h.label :price %>
+            <%= h.text_field :price %></ul>
+        <a class="submit-button" style="color: #fff;"><%= h.submit "add" %></a>
+        </div>
+    </fieldset>
+  <% end %>
+</div>
+
+<div class="small-10 small-centered columns ">
+  <%= form_for @section, url: menus_path, method: :post do |m| %>
+    <fieldset>
+      <legend>Sections</legend>
+        <div class="small-11 columns menu-input">
+          <ul><%= m.label :section %>
+            <%= m.text_field :section_name %></ul>
+        <a class="submit-button" style="color: #fff;"><%= m.submit "add" %></a>
+        </div>
+    </fieldset>
+  <% end %>
+</div>
+

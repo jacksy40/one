@@ -11,28 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150426013921) do
+ActiveRecord::Schema.define(version: 20150506160428) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "appetizers", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.string   "description", null: false
-    t.string   "picture"
-    t.float    "price",       null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "chickens", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.string   "description", null: false
-    t.string   "picture"
-    t.float    "price",       null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
 
   create_table "comments", force: :cascade do |t|
     t.string   "comments"
@@ -42,67 +24,20 @@ ActiveRecord::Schema.define(version: 20150426013921) do
     t.integer  "user_id",                      null: false
   end
 
-  create_table "cows", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.string   "description", null: false
+  create_table "menus", force: :cascade do |t|
+    t.string   "name",         null: false
+    t.string   "description",  null: false
     t.string   "picture"
-    t.float    "price",       null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.float    "price",        null: false
+    t.string   "section_name", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
-  create_table "drinks", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.string   "description"
-    t.string   "picture"
-    t.float    "price",       null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "noodles", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.string   "description", null: false
-    t.string   "picture"
-    t.float    "price",       null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "pigs", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.string   "description", null: false
-    t.string   "picture"
-    t.float    "price",       null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "rices", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.string   "description", null: false
-    t.string   "picture"
-    t.float    "price",       null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "seafoods", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.string   "description", null: false
-    t.string   "picture"
-    t.float    "price",       null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "soups", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.string   "description", null: false
-    t.string   "picture"
-    t.float    "price",       null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+  create_table "sections", force: :cascade do |t|
+    t.string   "section_name", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "users", force: :cascade do |t|

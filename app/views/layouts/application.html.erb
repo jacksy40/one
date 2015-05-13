@@ -5,30 +5,28 @@
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
 </head>
 <body>
 <div class="one-container">
-  <div class="img">
-    <%= image_tag('frontpage.jpeg') %>
-  </div>
-  <div class="title-border">
-    <div class="title-bar">
-        <div class="small-4 columns">
+   <div class="title-bar">
+        <div class="small-6 columns">
           <ul class="title-name">
-            <li class="title" style="opacity: none;">Number</li>
-             <li class="title" style="opacity: none;"><span> 1 </span></li>
-              <li class="title" style="opacity: none;">Taste</li>
-            <li class="name" style="opacity: none;"><%= link_to "chinese food", ones_path %></li>
+            <li class="title">Number</li>
+             <li class="title"><span> 1 </span></li>
+              <li class="title">Taste</li>
+            <li class="name"><%= link_to "chinese food", ones_path %></li>
           </ul>
         </div>
 
-        <div class="small-8 columns">
+        <div class="small-6 columns">
           <ul class="navi">
-            <li style="opacity: none;"><%= link_to "Menu", menus_path %></li>
+            <li><%= link_to "Menu", menus_path %></li>
+            <% if current_user %>
+              <li><%= link_to "admin", new_menu_path %></li>
+            <% end %>
           </ul>
         </div>
-    </div>
   </div>
 </div>
   <%- flash.each do |key, value| -%>
