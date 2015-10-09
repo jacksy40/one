@@ -1,65 +1,61 @@
-<div class="one-img-container">
+<div class="one-container">
   <div class="img">
-    <%= image_tag('frontpage.JPG') %>
+    <%= image_tag('frontpage1.jpg') %>
   </div>
 </div>
 
-  <div class="two-container">
-    <div class="panel info-1">Master Chefs</div>
-      <div class="panel info-1">Fresh Ingredients</div>
-      <div class="panel info-1">Health Conscious</div>
-    <div class="panel info-1">Yum!</div>
+  <div class="two-container small-12 small-centered columns">
+    <div class="info-1">Master Chefs</div>
+      <div class="info-1">Fresh Ingredients</div>
+      <div class="info-1">Not Your Average Chinese Takeout.</div>
+    <div class="info-1">Yum!</div>
   </div>
 
 <div class="three-container">
-  <div class="panel info-2">Hours + Location</div>
-  <div class="panel info-2">Directions</div>
-</div>
-
-<div class="info-container">
-  <div class="panel info-3">
-    <li style="text-decoration: underline;">Call</li>
-    <li>617.489.9577</li>
-    <li>We Deliver!</li>
-  <br>
-    <li>382 Trapelo road</li>
-    <li>Belmont, MA 02478</li>
-  <br>
-    <li>Sunday to Thursday</li>
-    <li>11:00AM to 11:00PM</li>
-    <li>Friday and Saturday</li>
-    <li>11:00AM to 12:00AM</li>
-  </div>
-  <div class="panel info-3">
-    <li style="text-decoration: underline;">Call</li>
-    <li>617.489.9577</li>
-    <li>We Deliver!</li>
-  <br>
-    <li>382 Trapelo road</li>
-    <li>Belmont, MA 02478</li>
-  <br>
-    <li>Sunday to Thursday</li>
-    <li>11:00AM to 11:00PM</li>
-    <li>Friday and Saturday</li>
-    <li>11:00AM to 12:00AM</li>
-  </div>
+    <div class="small-6 columns">
+      <div class="panel info-2">Specials</div>
+        <div class="special info-3">
+          <li>Specials</li>
+          <div class="pic1">
+            <%= image_tag('frontpage.jpg') %>
+          </div>
+        </div>
+    </div>
+    <div class="panel info-2a">Hours + Information</div>
+      <div class="panel small-6 columns info-3">
+        <li style="text-decoration: underline;">Call</li>
+         <li>617-489-9577</li>
+        <li>We Deliver!</li>
+      <br>
+        <li>382 Trapelo road</li>
+        <li>Belmont, MA 02478</li>
+      <br>
+        <li>Monday to Thursday</li>
+        <li>11:00AM to 10:00PM</li>
+        <li>Friday and Saturday</li>
+        <li>11:00AM to 11:00PM</li>
+        <li>Sunday</li>
+        <li>12:00AM to 10:00PM</li>
+      </div>
 </div>
 
 <div class="direction-container">
-  <div class="panel map-input info-4 ">
-    <b style="color: #333333; margin-right: 20em;">I can get you directions!</b>
-    <br>
-    <br>
-    <input id="start" class="small-10 columns">
-    <button class="button small" onclick="calcRoute();">directions</button>
-    </input>
-
-    <br>
+  <div class="large-10 large-centered columns">
+    <div class="panel map-input info-4 ">
+      <b style="color: #fff; list-style: underline;">I can get you directions!</b>
+        <br>
+        <br>
+          <input id="start" class="small-10 columns">
+            <button class="button small" onclick="calcRoute();">directions</button>
+          </input>
+        <br>
+    </div>
   </div>
+  <div id="map-canvas" class="large-centered"></div>
+</div>
 
-        <div id="map-canvas"></div>
   <div class="one-footer">
-    <p> Number 1 Taste chinese takout. Location: 382 Trapelo Road, Belmont Masschussetts 02478 Phone: 617.489.9577 </p>
+    <p> Number 1 Taste chinese takout. Location: 382 Trapelo Road, Belmont Masschussetts    02478 Phone: 617.489.9577 </p>
      <ul class="right-footer">
        <% if current_user %>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
@@ -67,5 +63,4 @@
           <li><%= link_to 'Sign In', new_user_session_path %></li>
        <% end %>
       </ul>
-
   </div>

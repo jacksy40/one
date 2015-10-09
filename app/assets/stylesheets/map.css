@@ -4,11 +4,12 @@ html, #map-canvas {
 
 #map-canvas {
   height: 500px;
-  width: 800px;
+  width: 85%;
   border: solid 1px;
   border-color: #fff;
   margin-bottom: 1em;
   display: inline-table;
+  margin-left: 5%
 }
 
 #start, input {

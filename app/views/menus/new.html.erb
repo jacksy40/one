@@ -1,7 +1,13 @@
 <h1> Admin function </h1>
-<h2> Update Menu </h2>
+<h2> Create Menu </h2>
+
 
 <div class="small-10 small-centered columns ">
+  <%- flash.each do |key, value| -%>
+    <div class="flash flash-<%= key %>">
+      <%= value %>
+    </div>
+  <% end %>
   <%= form_for @menu, method: :post do |h| %>
     <fieldset>
       <legend>Menu</legend>
@@ -13,6 +19,8 @@
             <%= h.text_field :name %></ul>
           <ul><%= h.label :description %>
             <%= h.text_field :description %></ul>
+          <ul><%= h.label :spicy %>
+            <%= h.radio_button(:spicy, "true") %></ul>
           <ul><%= h.label :picture %>
             <%= h.file_field :picture %></ul>
           <ul><%= h.label :price %>

@@ -14,6 +14,8 @@ class MenusController < ApplicationController
   end
 
   def show
+    menu = Menu.find(params["id"])
+    redirect_to menu_path
   end
 
   def new
@@ -33,19 +35,27 @@ class MenusController < ApplicationController
       menu = Menu.new(menu_params)
       if menu.save
         flash[:notice] = "Saved."
+      else
+        flash[:notice]='unsaved.'
       end
     end
     redirect_to new_menu_path
   end
 
+  def destroy
+    menu = Menu.find(params["id"])
+    menu.destroy
+    redirect_to menus_path
+  end
+
   private
 
   def section_params
-    params.require(:section).permit( :section )
+    params.require(:section).permit( :section_name )
   end
 
   def menu_params
-    params.require(:menu).permit( :name, :description, :picture, :price, :section_name)
+    params.require(:menu).permit( :spicy, :name, :description, :picture, :price, :section_name)
   end
 
 end

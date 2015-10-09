@@ -9,24 +9,23 @@
 </head>
 <body>
 <div class="one-container">
-   <div class="title-bar">
-        <div class="small-6 columns">
-          <ul class="title-name">
-            <li class="title">Number</li>
-             <li class="title"><span> 1 </span></li>
-              <li class="title">Taste</li>
-            <li class="name"><%= link_to "chinese food", ones_path %></li>
-          </ul>
-        </div>
-
-        <div class="small-6 columns">
-          <ul class="navi">
-            <li><%= link_to "Menu", menus_path %></li>
-            <% if current_user %>
-              <li><%= link_to "admin", new_menu_path %></li>
-            <% end %>
-          </ul>
-        </div>
+   <div class="large-12 columns title-bar">
+      <div class="large-5 columns">
+        <li class="logo">
+          <%= link_to image_tag('logo.jpg'), ones_path %>
+        </li>
+      </div>
+    <div class="large-7 columns">
+      <ul class="navi">
+        <li><%= link_to "Menu", menus_path %></li>
+        <li><%= link_to "Direction", menus_path %></li>
+        <li><%= link_to "Ingredients", menus_path %></li>
+        <% if current_user %>
+          <li><%= link_to "/ Admin", new_menu_path %></li>
+        <% end %>
+        <li><%= link_to image_tag('yelp.jpg'), "http://www.yelp.com/biz/number-one-taste-chinese-restaurant-belmont" %></li>
+      </ul>
+    </div>
   </div>
 </div>
   <%- flash.each do |key, value| -%>
