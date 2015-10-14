@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   resources :ones, only: [ :index, :show ]
   resources :menus, only: [ :index, :show, :new, :create, :destroy ]
+  resources :directions, only: [:index]
 
 end
