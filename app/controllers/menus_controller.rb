@@ -1,6 +1,7 @@
 class MenusController < ApplicationController
 
   def index
+    @cat = Section.all
     @appitizer = Menu.where(section_name: 'Appitizer')
     @rice = Menu.where(section_name: 'Rice')
     @lo_mein = Menu.where(section_name: 'Lo Mein')
