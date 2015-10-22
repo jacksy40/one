@@ -64,6 +64,13 @@
   z-index: 0;
 }
 
+.ingredient-img > img {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 95%;
+}
+
 .logo {
   padding-top: 1vh;
   position: relative;
@@ -93,7 +100,19 @@
   overflow: hidden;
 }
 
+.ingredient-one-container {
+  position: relative;
+  height: 12vh;
+  overflow: hidden;
+}
+
 .two-container {
+  z-index: 1;
+  position: relative;
+  height: 60%;
+}
+
+.ingredient-two-container {
   z-index: 1;
   position: relative;
   height: 60%;
@@ -127,6 +146,20 @@
   margin-left: 20vw;
 }
 
+.ingredient-info-1 {
+  width: 60%;
+  font-size: 6vh;
+  font-size: 5vw;
+  text-align: center;
+  color: #fff;
+  border: solid 1px;
+  font-family: 'Amatic SC', serif;
+  margin-bottom: .6em;
+  margin-left: 20vw;
+}
+.ingredient-info-1-container {
+  padding-top: 6em;
+}
 .panel {
   position: relative;
   width: 50em;
@@ -141,7 +174,7 @@
   height: 10vh;
   font-size: 1.3em;
   display: inline-table;
-  background-color: #00B23E;
+  background-color: #27B29A;
   color: #fff;
   font-family: 'Amatic SC', serif;
   text-align: center;
@@ -153,7 +186,7 @@
   height: 10vh;
   font-size: 1.3em;
   display: inline-table;
-  background-color: #00B23E;
+  background-color: #27B29A;
   color: #fff;
   font-family: 'Amatic SC', ariel;
   text-align: center;
@@ -165,11 +198,10 @@
   background-color: #99999;
   width: 40vw;
   height: 30vh;
+  color: #fff;
   font-size: 3.5vh;
   font-size: 3.5vw;
   display: inline-table;
-  color: #fff;
-  border: solid 1px;
   font-family: 'Amatic SC', ariel;
   margin-right: 2em;
 }
@@ -189,9 +221,14 @@
   height: 19em;
 }
 
+.dish-name {
+  color: #000;
+}
+
 .info-3 li {
  list-style: none;
  text-align: center;
+ color: #000;
 }
 
 .info-4 {
