@@ -38,16 +38,15 @@
   font-size: 4vw;
   font-size: 2vh;
   display: inline-block;
-  margin-top: 3em;
-  margin-right: 1em;
+  margin-top: 1.5em;
   list-style: none;
   color: #fff;
   text-decoration: none;
 }
 
 .navi img {
-  width: 16vh;
-  height: 10vw;
+  width: 14vh;
+  height: 7vw;
 }
 
 .navi li a {
@@ -83,6 +82,16 @@
   position: relative;
   width: 33vw;
   height: 40vh;
+}
+
+.vendor-pic1 {
+  position: relative;
+  width: 35vw;
+  height: 40vh;
+}
+
+.recycle-pic1 {
+  position: relative;
 }
 
 .logo {
@@ -127,6 +136,21 @@
   border-color: #000;
 }
 
+.vendor-container {
+  position: relative;
+  padding-top: 5vh;
+  background-color: #fff;
+  border-top-width: 1em;
+  border-color: #000;
+}
+
+.environment-container {
+  padding-top: 7vh;
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  border-color: #000;
+}
 
 .direction-container {
   margin-top: 10vh;
@@ -157,6 +181,10 @@
   margin-bottom: .6em;
   margin-left: 20vw;
 }
+
+.dish-name {
+  margin-left: 8vw;
+}
 .ingredient-info-1-container {
   padding-top: 6em;
 }
@@ -180,6 +208,30 @@
   text-align: center;
   margin-left: 10%;
 }
+
+.vendor-info-2 {
+  width: 40vw;
+  height: 10vh;
+  font-size: 1.5em;
+  display: inline-table;
+  background-color: #27B29A;
+  color: #fff;
+  font-family: 'Amatic SC', serif;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.env-info-2 {
+  width: 100%;
+  height: 10vh;
+  font-size: 1.5em;
+  display: inline-table;
+  background-color: #27B29A;
+  color: #fff;
+  font-family: 'Amatic SC', serif;
+  text-align: center;
+}
+
 
 .info-2a {
   width: 40vw;
