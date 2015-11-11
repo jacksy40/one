@@ -121,6 +121,12 @@
   height: 60%;
 }
 
+.two1-container {
+  z-index: 1;
+  position: relative;
+  padding-top: 20%;
+}
+
 .ingredient-two-container {
   z-index: 1;
   position: relative;
@@ -159,6 +165,17 @@
 }
 
 .info-1 {
+  width: 60%;
+  font-size: 5vh;
+  font-size: 4vw;
+  text-align: center;
+  color: #fff;
+  border: solid 1px;
+  font-family: 'Amatic SC', serif;
+  margin-bottom: .6em;
+  margin-left: 20vw;
+}
+.info-11 {
   width: 60%;
   font-size: 5vh;
   font-size: 4vw;
@@ -209,6 +226,17 @@
   margin-left: 10%;
 }
 
+.info-21 {
+  width: 80vw;
+  height: 10vh;
+  font-size: 2em;
+  display: inline-table;
+  background-color: #27B29A;
+  color: #fff;
+  font-family: 'Amatic SC', serif;
+  text-align: center;
+  margin-left: 10%;
+}
 .vendor-info-2 {
   width: 40vw;
   height: 10vh;
@@ -255,7 +283,10 @@
   font-size: 3.5vw;
   display: inline-table;
   font-family: 'Amatic SC', ariel;
-  margin-right: 2em;
+  margin-right: 1em;
+}
+
+.info-3, img {
 }
 
 .info-img {
@@ -351,13 +382,12 @@ strong > a:hover {
 
 
 .menu-bar {
- text-align: center;
  height: 10vh;
  position: relative;
 }
 .menu-bar li {
   list-style: none;
-  display: inline;
+  display: inline-block;
   margin-top: 2vh;
   margin-right: 1em;
   color: #000;
