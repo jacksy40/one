@@ -6,10 +6,17 @@ function initialize() {
   directionsDisplay = new google.maps.DirectionsRenderer();
   var taste = new google.maps.LatLng(42.3856997, -71.1848005);
   var mapOptions = {
-    zoom: 14,
-    center: taste,
+    zoom: 13,
     zoomControl: true,
+    center: new google.maps.LatLng(42.3856997, -71.1848005),
+    radius: 2 * 1609.344,
+    fillColor: "#ff69b4",
+    fillOpacity: 0.5,
+    strokeOpacity: 0.0,
+    strokeWeight: 0,
+    map: map
   };
+
 
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   directionsDisplay.setMap(map);
